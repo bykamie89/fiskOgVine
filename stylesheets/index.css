@@ -1,0 +1,51 @@
+* {
+    all: unset;
+    display: revert;
+    cursor: revert;
+    box-sizing: border-box;
+  }
+ 
+ @media (min-width: 768px){
+      header {
+        display: flex;
+        justify-content: space-between;
+        background-color: lightgray;
+        box-shadow: 0 12px 50px 0 #f8f7f7e1;
+        flex-wrap: wrap;
+      }
+      .menu ul{
+        justify-content: center;
+        text-align: center;
+
+      }
+    
+
+      header nav ul{
+        gap: 90px;
+        font-size: 120%;
+      }
+    
+      .menu li a {
+        transition: all 0.3s ease 0s;
+        
+      }
+      
+      .menu li a:hover {
+        color: #6c7ca7;
+      }
+      
+      li,
+      a {
+        text-decoration: none;
+        color: #4a4680;
+        text-transform: uppercase;
+      }
+      .menu img{
+        width: 10%;
+      }
+
+      
+      }
+
+
+  
