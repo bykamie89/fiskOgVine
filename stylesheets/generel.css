@@ -11,12 +11,33 @@
     padding-right: 1rem;
   }
 
+  header {
+    background-color: lightgrey;
+    box-shadow: 0 12px 50px 0 #f8f7f7e1;
+    position: sticky;
+    top: 0;
+  }
+
   .menu {
   display: contents;
   }
 
   .menu ul {
     display: none; /* Fjern menu-listen som standard */
+  }
+
+  .menu li a {
+    transition: all 0.3s ease 0s;
+    
+  }
+  .menu ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .menu li a:hover {
+    color: white;
   }
 
   .menu.shown ul {
@@ -29,54 +50,26 @@
     padding: 1rem;
   }
 
-
   @media (min-width: 768px){
-
 .menu ul{ 
     display: flex;
     flex-direction: row;
-    list-style: none;
     align-items: center;    
-    background-color: grey;
-    padding: 0.5rem;
-  }
-  header {
-    display: flex;
-    justify-content: space-between;
-    background-color: grey;
-    box-shadow: 0 12px 50px 0 #f8f7f7e1;
-    flex-wrap: wrap;
-  }
-  .menu ul{
+    background-color: lightgrey;
     justify-content: center;
-    text-align: center;
-
   }
-
   header nav ul{
-    gap: 80px;
+    gap: 50px;
     font-size: 120%;
   }
-
-  .menu li a {
-    transition: all 0.3s ease 0s;
-    
+  .menu ul li {
+    display: inline;
   }
-  
-  .menu li a:hover {
-    color: lightgray;
+  .logo img {
+    display: block;
+    width:220px;
+    margin-top: -40px;
   }
-  
-  li,
-  a {
-    text-decoration: none;
-    color: black;
-    text-transform: uppercase;
-  }
-  .menu img{
-    width: 11%;
-  }
-  
   .toggle-btn {
     background: transparent;
     border: none;
@@ -84,4 +77,13 @@
     display: none;
   }
   }
+  @media (min-width: 900px){
+    header nav ul{
+      gap: 100px;
+
+    }
+  }
+  
+
+  
  
