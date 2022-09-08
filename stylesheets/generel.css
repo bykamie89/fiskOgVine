@@ -1,0 +1,45 @@
+
+  .toggle-btn {
+    display: block; /* Vis knappen, når viewporten maksimalt er 600px */
+    color: black;
+    padding-right: 1rem;
+  }
+
+  .menu {
+  display: contents;
+  }
+
+  .menu ul {
+    display: none; /* Fjern menu-listen som standard */
+  }
+
+  .menu.shown ul {
+    /* Vis menu-listen, når klassen ".shown" er til stede */
+    list-style: none;
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: column;
+    background-color: lightgrey;
+    padding: 1rem;
+  }
+
+
+  @media (min-width: 768px){
+
+.menu ul{ 
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 1rem;
+    align-items: center;    
+    background-color: lightgrey;
+    padding: 1rem;
+  }
+  
+  .toggle-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+  }
+  }
