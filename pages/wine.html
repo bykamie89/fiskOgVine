@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/stylesheets/wine.css" />
     <link rel="stylesheet" href="/stylesheets/generel.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <title>Vin</title>
   </head>
   <body>
@@ -23,29 +24,25 @@
         </ul>
       </nav>
     </header>
-   
 
     <main>
       <section id="wine-card">
         <div>
-        <button data-wineType="alle" class="valgt">Vinkort</button>  
-        <button data-wineType="champagne">Champagne</button>
-        <button data-wineType="hvidvin">Hvidvin</button>
-        <button data-wineType="rødvin">Rødvin</button>
-        <button data-wineType="avec">Avec</button>
+          <button data-wineType="alle" class="valgt">Vinkort</button>
+          <button data-wineType="champagne">Champagne</button>
+          <button data-wineType="hvidvin">Hvidvin</button>
+          <button data-wineType="rødvin">Rødvin</button>
+          <button data-wineType="avec">Avec</button>
         </div>
         <div>
-          <img src="" alt="">
+          <img src="" alt="" />
         </div>
-
       </section>
 
-
       <section id="drink-type"></section>
-
     </main>
-   
-  <footer>
+
+    <footer>
       <div class="footer_container">
         <div class="footer_row">
           <div class="col">
@@ -79,10 +76,10 @@
 
     <template id="drink-template">
       <article id="template-article">
-      <h2 class="drink-type-headline"></h2>
-      <p class="drink-decription"></p>
-      <p class="drink-vintage"></p>
-      <p class="drink-price"></p>
+        <h2 class="drink-type-headline"></h2>
+        <p class="drink-decription"></p>
+        <p class="drink-vintage"></p>
+        <p class="drink-price"></p>
       </article>
     </template>
     <script src="/js/burgermenu.js"></script>
