@@ -81,6 +81,7 @@ header {
     margin-bottom: 30px;
   }
 }
+
 @media (min-width: 900px) {
   header nav ul {
     gap: 100px;
@@ -91,6 +92,8 @@ header {
   }
 }
 
+/* footer */
+
 footer {
   padding: 70px 0;
   background-color: grey;
@@ -99,8 +102,6 @@ footer {
   bottom: 0;
   width: 100%;
 }
-
-/* footer */
 
 .footer_container {
   max-width: 1200px;
