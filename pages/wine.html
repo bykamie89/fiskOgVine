@@ -16,13 +16,37 @@
           <li><a href=""></a>Book</li>
           <li><a href="/pages/about.html">Om</a></li></li>
           <li><a href="/pages/menu.html">Menu</a></li>
-          <li><a href="/pages/wine.html">Vin</a></li>
+          <li><a id="wine" data-endpoint="wine" href="/pages/wine.html">Vin</a></li>
         </ul>
       </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <section id="wine-card">
+        <div>
+        <button data-wineType="alle" class="valgt">Vinkort</button>  
+        <button data-wineType="champagne">Champagne</button>
+        <button data-wineType="hvidvin">Hvidvin</button>
+        <button data-wineType="rødvin">Rødvin</button>
+        <button data-wineType="avec">Avec</button>
+        </div>
+        <div>
+          <img src="" alt="">
+        </div>
 
+      </section>
+
+      <section id="drink-type"></section>
+
+    </main>
+    <footer></footer>
+    <template id="drink-template">
+      <article id="template-article">
+      <h2 class="drink-type-headline"></h2>
+      <p class="drink-decription"></p>
+      <p class="drink-vintage"></p>
+      <p class="drink-price"></p>
+      </article>
+    </template>
     <script src="/js/burgermenu.js"></script>
     <script src="/js/script.js"></script>
   </body>
