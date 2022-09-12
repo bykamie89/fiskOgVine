@@ -1,45 +1,137 @@
+* {
+  all: unset;
+  display: revert;
+  cursor: revert;
+  box-sizing: border-box;
+}
 
-  .toggle-btn {
-    display: block; /* Vis knappen, når viewporten maksimalt er 600px */
-    color: black;
-    padding-right: 1rem;
-  }
+.toggle-btn {
+  display: block; /* Vis knappen, når viewporten maksimalt er 600px */
+  color: black;
+  padding-right: 1rem;
+}
 
-  .menu {
+header {
+  background-color: lightgrey;
+  box-shadow: 0 12px 50px 0 #f8f7f7e1;
+  position: sticky;
+  top: 0;
+}
+
+.menu {
   display: contents;
-  }
+}
 
+.menu ul {
+  display: none; /* Fjern menu-listen som standard */
+}
+
+.menu li a {
+  transition: all 0.3s ease 0s;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.menu li a:hover {
+  color: white;
+}
+
+.menu.shown ul {
+  /* Vis menu-listen, når klassen ".shown" er til stede */
+  list-style: none;
+  display: flex;
+  flex: 1 1 100%;
+  flex-flow: column;
+  background-color: lightgrey;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
   .menu ul {
-    display: none; /* Fjern menu-listen som standard */
-  }
-
-  .menu.shown ul {
-    /* Vis menu-listen, når klassen ".shown" er til stede */
-    list-style: none;
-    display: flex;
-    flex: 1 1 100%;
-    flex-flow: column;
-    background-color: lightgrey;
-    padding: 1rem;
-  }
-
-
-  @media (min-width: 768px){
-
-.menu ul{ 
     display: flex;
     flex-direction: row;
-    list-style: none;
-    gap: 1rem;
-    align-items: center;    
+    align-items: center;
     background-color: lightgrey;
-    padding: 1rem;
+    justify-content: center;
   }
-  
+  header nav ul {
+    gap: 50px;
+    font-size: 120%;
+  }
+  .menu ul li {
+    display: inline;
+  }
+  .logo img {
+    display: block;
+    width: 220px;
+    margin-top: -40px;
+    margin-bottom: -10px;
+  }
   .toggle-btn {
     background: transparent;
     border: none;
     cursor: pointer;
     display: none;
   }
+  .col {
+    width: 100%;
+    margin-bottom: 30px;
   }
+}
+
+@media (min-width: 900px) {
+  header nav ul {
+    gap: 100px;
+  }
+  .col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+/* footer */
+
+footer {
+  padding: 70px 0;
+  background-color: grey;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer_container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer_row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: lightgray;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.col .social-links a:hover {
+  color: aqua;
+  background-color: #ffffff;
+}

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/stylesheets/wine.css" />
     <link rel="stylesheet" href="/stylesheets/generel.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <title>Vin</title>
   </head>
   <body>
@@ -13,16 +14,74 @@
       <nav class="menu">
         <button class="toggle-btn">=</button>
         <ul>
-          <li><a href=""></a>Book</li>
-          <li><a href="/pages/about.html">Om</a></li></li>
+          <li><a href="/pages/about.html">Book</a></li>
+          <li><a href="/pages/about.html">Om</a></li>
+          <li>
+            <a class="logo" href="/pages/index.html"><img src="/svg/Artboard 1.svg" alt="fisk&vin logo" /></a>
+          </li>
           <li><a href="/pages/menu.html">Menu</a></li>
           <li><a href="/pages/wine.html">Vin</a></li>
         </ul>
       </nav>
     </header>
-    <main></main>
-    <footer></footer>
 
+    <main>
+      <section id="wine-card">
+        <div>
+          <button data-wineType="alle" class="valgt">Vinkort</button>
+          <button data-wineType="champagne">Champagne</button>
+          <button data-wineType="hvidvin">Hvidvin</button>
+          <button data-wineType="rødvin">Rødvin</button>
+          <button data-wineType="avec">Avec</button>
+        </div>
+        <div>
+          <img src="" alt="" />
+        </div>
+      </section>
+
+      <section id="drink-type"></section>
+    </main>
+
+    <footer>
+      <div class="footer_container">
+        <div class="footer_row">
+          <div class="col">
+            <h2>KONTAKT</h2>
+            <h3>FISK & VIN</h3>
+            <address>
+              Fisk & Vin vej 1<br />
+              Fiskebyen <br />
+              Fiskeland <br />
+              +45 11 22 33 44
+            </address>
+          </div>
+          <div class="col">
+            <h2>ÅBNINGSTIDER</h2>
+            <h3>TIRS-LØR</h3>
+            <p>FROKOST: 12.00 - 15.00</p>
+            <p>AFTEN: 18.00 - 22.30</p>
+            <a href="url">Klik her for at se Smiley rapport</a>
+          </div>
+          <div class="col">
+            <h2>SoMe</h2>
+            <div class="social-links">
+              <h3>Følg os på</h3>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-facebook-f"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <template id="drink-template">
+      <article id="template-article">
+        <h2 class="drink-type-headline"></h2>
+        <p class="drink-decription"></p>
+        <p class="drink-vintage"></p>
+        <p class="drink-price"></p>
+      </article>
+    </template>
     <script src="/js/burgermenu.js"></script>
     <script src="/js/script.js"></script>
   </body>
