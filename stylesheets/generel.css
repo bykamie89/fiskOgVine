@@ -13,9 +13,12 @@
 
 header {
   background-color: lightgrey;
-  box-shadow: 0 12px 50px 0 #f8f7f7e1;
+  /*box-shadow: 0 12px 50px 0 #f8f7f7e1;*/
   position: sticky;
   top: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
 }
 
 .menu {
@@ -48,8 +51,26 @@ header {
   background-color: lightgrey;
   padding: 1rem;
 }
+.logo_web img{
+  display: none;
+}
+.logo_mob {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.logo_mob img{
+  width: 50%;
+  align-self: center;
+}
+
 
 @media (min-width: 768px) {
+  header {
+    background-color: lightgrey;
+    position: sticky;
+    top: 0;
+  }
   .menu ul {
     display: flex;
     flex-direction: row;
@@ -64,7 +85,10 @@ header {
   .menu ul li {
     display: inline;
   }
-  .logo img {
+  .logo_mob img{
+    display: none;
+  }
+  .logo_web img {
     display: block;
     width: 220px;
     margin-top: -40px;
