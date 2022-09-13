@@ -31,9 +31,8 @@ main img {
     align-self: center;
     justify-self: center;
 }
-.quote p{
+.quote h1{
     font-size: 200%;
-    font-style: italic;
     text-align: center;
     padding-top: 4.5rem;
 }
@@ -69,7 +68,7 @@ a:hover {
 }
 
 @media (min-width: 422px){
-    .quote p{
+    .quote h1{
         padding-top: 5rem;
     }
     .splash{
@@ -80,7 +79,7 @@ a:hover {
     .gallery {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
-    .quote p{
+    .quote h1{
         font-size: 300%;
     }
 }

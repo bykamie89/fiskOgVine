@@ -4,6 +4,11 @@
   cursor: revert;
   box-sizing: border-box;
 }
+html{
+  --ptag-beige:#E6DCD4;
+  --ptag-grey:#9C9795;
+  --ptag-blue:#303249;
+}
 
 .toggle-btn {
   display: block; /* Vis knappen, når viewporten maksimalt er 600px */
@@ -12,7 +17,7 @@
 }
 
 header {
-  background-color: lightgrey;
+  background-color: #E6DCD4;
   /*box-shadow: 0 12px 50px 0 #f8f7f7e1;*/
   position: sticky;
   top: 0;
@@ -34,9 +39,7 @@ header {
 }
 .menu ul li a {
   text-decoration: none;
-  color: black;
   text-transform: uppercase;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .menu li a:hover {
   color: white;
@@ -63,11 +66,48 @@ header {
   width: 50%;
   align-self: center;
 }
+@font-face {
+  font-family: overskriftFont;
+  src: url(/fonte/dancingscript-variablefont_wght-webfont.woff2);
+}
+@font-face {
+  font-family: paragrafFont;
+  src: url(/fonte/josefinsans-variablefont_wght-webfont.woff2);
+}
+h1{
+  font-size: 2em;
+  font-family: overskriftFont;
+}
+h2{
+  font-size: 1.5em;
+  font-family: paragrafFont;
+}
+h3{
+  font-size: 1em;
+  font-family: paragrafFont;
+}
+address{
+  font-size: 1em;
+  font-family: paragrafFont;
+}
+p{
+  font-size: 1em;
+  font-family: paragrafFont;
+}
+a{
+  font-family: paragrafFont;
+  color: #303249;
+  font-weight: 700;
+}
+button{
+  font-size: 1.5em;
+  font-family: paragrafFont;
+}
 
 
 @media (min-width: 768px) {
   header {
-    background-color: lightgrey;
+    background-color: #E6DCD4;
     position: sticky;
     top: 0;
   }
@@ -75,7 +115,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: lightgrey;
+    background-color: #E6DCD4;
     justify-content: center;
   }
   header nav ul {
@@ -121,7 +161,7 @@ header {
 footer {
   padding: 70px 0;
   background-color: grey;
-  position: fixed;
+  /*position: fixed;*/
   left: 0;
   bottom: 0;
   width: 100%;
