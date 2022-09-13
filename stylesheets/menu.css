@@ -14,7 +14,7 @@
   display: flex;
   align-items: end;
   justify-content: center;
-  background-image: url(../img/Rimmet\ jomfruhummer\ med\ grønne\ jordbær\,\ peberrod\ og\ baerii\ caviar.webp);
+  background-image: url(../img/billede18.webp);
   background-size: cover;
   width: 100%;
   height: auto;
@@ -26,7 +26,7 @@
   display: flex;
   align-items: end;
   justify-content: center;
-  background-image: url(../img/Stegt\ lam\ med\ spæde\ hvidløg\,\ jordskokker\ &\ sauce\ med\ rosmarin.webp);
+  background-image: url(../img/billede21.webp);
   background-size: cover;
   width: 100%;
   height: auto;
@@ -35,8 +35,8 @@
 }
 
 button {
-  color: black;
-  background-color: lightgrey;
+  color: var(--ptag-beige);
+  background-color: var(--button-blue);
   width: 100px;
   height: 25px;
   text-align: center;
