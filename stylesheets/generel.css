@@ -33,6 +33,7 @@ header {
 
 .menu ul {
   display: none; /* Fjern menu-listen som standard */
+  color: var(--ptag-blue);
 }
 
 .menu li a {
@@ -82,12 +83,14 @@ h1 {
 h2 {
   font-size: 1.5em;
   font-family: paragrafFont;
+  color: var(--ptag-blue);
 }
 h3,
 address,
 p {
   font-size: 1em;
   font-family: paragrafFont;
+  color: var(--ptag-blue);
 }
 a {
   font-family: paragrafFont;
@@ -164,7 +167,7 @@ button {
 
 footer {
   padding: 30px 20px;
-  background-color: grey;
+  background-color: #F7F3F1;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -187,17 +190,17 @@ footer {
   display: inline-block;
   height: 40px;
   width: 40px;
-  background-color: lightgray;
+  background-color: #e6dcd4;
   margin: 0 10px 10px 0;
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
-  color: #ffffff;
+  color: var(--ptag-blue);
   transition: all 0.5s ease;
 }
 
 .col .social-links a:hover {
-  color: aqua;
+  color: var(--button-blue);
   background-color: #ffffff;
 }
 
