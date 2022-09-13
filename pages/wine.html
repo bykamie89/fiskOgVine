@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/stylesheets/wine.css" />
     <link rel="stylesheet" href="/stylesheets/generel.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Vin</title>
   </head>
   <body>
@@ -17,28 +20,32 @@
           <li><a href="/pages/about.html">Book</a></li>
           <li><a href="/pages/about.html">Om</a></li>
           <li>
-            <a class="logo" href="/pages/index.html"><img src="/svg/Artboard 1.svg" alt="fisk&vin logo" /></a>
+            <a class="logo" href="/pages/index.html"
+              ><img src="/svg/Artboard 1.svg" alt="fisk&vin logo"
+            /></a>
           </li>
           <li><a href="/pages/menu.html">Menu</a></li>
-          <li><a href="/pages/wine.html">Vin</a></li>
+          <li>
+            <a href="/pages/wine.html">Vin</a>
+          </li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section id="wine-card">
-        <div>
-          <button data-wineType="alle" class="valgt">Vinkort</button>
-          <button data-wineType="champagne">Champagne</button>
-          <button data-wineType="hvidvin">Hvidvin</button>
-          <button data-wineType="rødvin">Rødvin</button>
-          <button data-wineType="avec">Avec</button>
-        </div>
+      <section>
+        <nav id="wine-card">
+          <button id="wine" data-winetype="wine" class="valgt">Vinkort</button>
+          <button data-winetype="champagne">Champagne</button>
+          <button data-winetype="hvidvin">Hvidvin</button>
+          <button data-winetype="rødvin">Rødvin</button>
+          <button data-winetype="avec">Avec</button>
+        </nav>
         <div>
           <img src="" alt="" />
         </div>
       </section>
-
+      <h2 class="drink-type-headline"></h2>
       <section id="drink-type"></section>
     </main>
 
@@ -76,7 +83,6 @@
 
     <template id="drink-template">
       <article id="template-article">
-        <h2 class="drink-type-headline"></h2>
         <p class="drink-decription"></p>
         <p class="drink-vintage"></p>
         <p class="drink-price"></p>
@@ -84,5 +90,14 @@
     </template>
     <script src="/js/burgermenu.js"></script>
     <script src="/js/script.js"></script>
+    <script>
+      async function getData() {
+        const response = await fetch(url + 'wine', info);
+        dbResponse = await response.json();
+        if (this.winetype == 'wine') {
+          visDrinks();
+        }
+      }
+    </script>
   </body>
 </html>

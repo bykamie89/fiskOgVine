@@ -1,0 +1,16 @@
+button{
+    border: 1px solid black;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+#drink-type{
+    display: grid;
+    margin: 3rem 10rem 3rem 10rem;
+}
+
+#template-article{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+
+}

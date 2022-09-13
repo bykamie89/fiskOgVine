@@ -1,34 +1,24 @@
 const url = 'https://fiskogvine-6dcb.restdb.io/rest/';
 const info = {
   headers: {
-    'x-apikey': '6319b950e906d642de324320',
+    'x-apikey': '631f796bfdc15b0265f17343',
   },
 };
 
-//const dinner = document.querySelector('#dinner');
-//const lunch = document.querySelector('#lunch');
-const wine = document.querySelector('#wine');
+//const wine = document.querySelector('#wine');
 const wineCard = document.querySelector('.drink-type-headline');
-
-console.log(wine);
 
 let dbResponse;
 let filter = 'alle';
 
-//dinner.addEventListener('click', getData);
-//lunch.addEventListener('click', getData);
-wine.addEventListener('click', getData);
+//wine.addEventListener('click', findDrinks);
 
 async function getData() {
-  const response = await fetch(url + this.dataset.endpoint, info);
+  const response = await fetch(url + 'wine', info);
   dbResponse = await response.json();
-
-  console.log(dbResponse);
-
-  // if (this.dataset.endpoint == 'wine') {
-  //   findDrinks();
-  // } else {
-  // }
+  if (this.winetype == 'wine') {
+    visDrinks();
+  }
 }
 
 function findDrinks() {
@@ -36,14 +26,15 @@ function findDrinks() {
   filterKnapper.forEach((knap) =>
     knap.addEventListener('click', filtrerDrinks)
   );
+  getData();
 }
 
 function filtrerDrinks() {
-  filter = this.dataset.wineType;
+  filter = this.dataset.winetype;
   document.querySelector('.valgt').classList.remove('valgt');
   this.classList.add('valgt');
-  visDrinks();
   wineCard.textContent = this.textContent;
+  visDrinks();
 }
 
 function visDrinks() {
@@ -53,10 +44,10 @@ function visDrinks() {
   drinkSection.textContent = '';
 
   dbResponse.forEach((drink) => {
-    if (filter == drink.wineType || filter == 'alle') {
+    if (filter == drink.winetype || filter == 'alle') {
       const clone = drinkTemplate.cloneNode(true);
-      clone.querySelector('.drink-decription').textContent = drink.beskrivelse;
-      clone.querySelector('.drink-vintage').textContent = drink.year;
+      clone.querySelector('.drink-decription').textContent = drink.description;
+      clone.querySelector('.drink-vintage').textContent = drink.vintage;
       clone.querySelector('.drink-price').textContent = drink.price;
 
       drinkSection.appendChild(clone);
