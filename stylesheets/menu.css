@@ -1,3 +1,47 @@
+* {
+  all: unset;
+  display: revert;
+  cursor: revert;
+  box-sizing: border-box;
+}
 
+/* Mobile first */
+.grid_1-1 {
+  display: grid;
+  padding: 20px;
+  gap: 20px;
+}
 
+.col_img1 {
+  background-image: url(../img/Rimmet\ jomfruhummer\ med\ grønne\ jordbær\,\ peberrod\ og\ baerii\ caviar.webp);
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 50/50;
+  background-position: 50%;
+  margin-top: 5%;
+}
 
+.col_img2 {
+  background-image: url(../img/Stegt\ lam\ med\ spæde\ hvidløg\,\ jordskokker\ &\ sauce\ med\ rosmarin.webp);
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 50/50;
+  background-position: 50%;
+  margin-top: 5%;
+}
+
+button {
+  color: black;
+  background-color: lightgrey;
+  width: 100px;
+  height: 25px;
+  text-align: center;
+}
+
+@media (min-width: 1000px) {
+  .grid_1-1 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
