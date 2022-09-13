@@ -39,7 +39,6 @@ function filtrerDrinks() {
 function visDrinks() {
   const drinkSection = document.querySelector('#drink-holder');
   const drinkTemplate = document.querySelector('#drink-template').content;
-  const h2DrinkType = document.querySelector('.drink-type');
 
   let drinkType = filter;
 
@@ -49,9 +48,11 @@ function visDrinks() {
     if (filter == drink.type || filter == 'alle') {
       const clone = drinkTemplate.cloneNode(true);
 
-      if (filter != drink.type) {
-        h2DrinkType.textContent = drink.type;
-        filter = drink.type;
+      if (drinkType != drink.type) {
+        clone.querySelector('.drink-type').textContent = drink.type;
+        drinkType = drink.type;
+      } else {
+        clone.querySelector('.drink-type').textContent = '';
       }
 
       clone.querySelector('.drink-decription').textContent = drink.description;
