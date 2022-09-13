@@ -1,0 +1,36 @@
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+  
+  .om_os {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .p_om {
+    text-align: center;
+    line-height: 1.4;
+    padding-bottom: 1.8rem;
+  }
+  
+  .h1_om {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-weight: bold;
+  }
+  
+  @media (min-width: 599px) {
+    .om_os {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }

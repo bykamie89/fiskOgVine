@@ -82,15 +82,7 @@ h2{
   font-size: 1.5em;
   font-family: paragrafFont;
 }
-h3{
-  font-size: 1em;
-  font-family: paragrafFont;
-}
-address{
-  font-size: 1em;
-  font-family: paragrafFont;
-}
-p{
+h3, address, p{
   font-size: 1em;
   font-family: paragrafFont;
 }
@@ -156,12 +148,21 @@ button{
   }
 }
 
+@media (min-width: 900px) {
+  header nav ul {
+    gap: 100px;
+  }
+  .footer_row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 /* footer */
 
 footer {
-  padding: 70px 0;
+  padding: 30px 20px;
   background-color: grey;
-  /*position: fixed;*/
   left: 0;
   bottom: 0;
   width: 100%;
@@ -170,16 +171,14 @@ footer {
 .footer_container {
   max-width: 1200px;
   margin: auto;
-}
-
-.footer_row {
-  display: flex;
-  flex-wrap: wrap;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .col {
-  width: 25%;
-  padding: 0 15px;
+  width: 100%;
+  margin-bottom: 30px;
+  line-height: 1.4;
 }
 
 .col .social-links a {
@@ -198,4 +197,13 @@ footer {
 .col .social-links a:hover {
   color: aqua;
   background-color: #ffffff;
+}
+
+.smiley {
+  text-decoration: underline;
+}
+
+.h2_footer {
+  font-weight: bold;
+  padding-bottom: 1rem;
 }
