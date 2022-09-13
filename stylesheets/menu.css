@@ -8,28 +8,30 @@
 /* Mobile first */
 .grid_1-1 {
   display: grid;
-  padding: 20px;
-  gap: 20px;
 }
 
 .col_img1 {
+  display: flex;
+  align-items: end;
+  justify-content: center;
   background-image: url(../img/Rimmet\ jomfruhummer\ med\ grønne\ jordbær\,\ peberrod\ og\ baerii\ caviar.webp);
   background-size: cover;
   width: 100%;
   height: auto;
   aspect-ratio: 50/50;
   background-position: 50%;
-  margin-top: 5%;
 }
 
 .col_img2 {
+  display: flex;
+  align-items: end;
+  justify-content: center;
   background-image: url(../img/Stegt\ lam\ med\ spæde\ hvidløg\,\ jordskokker\ &\ sauce\ med\ rosmarin.webp);
   background-size: cover;
   width: 100%;
   height: auto;
   aspect-ratio: 50/50;
   background-position: 50%;
-  margin-top: 5%;
 }
 
 button {
@@ -38,6 +40,41 @@ button {
   width: 100px;
   height: 25px;
   text-align: center;
+}
+
+#popup-lunch,
+#popup-dinner {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  display: none;
+}
+
+#popup-lunch article {
+  width: 100%;
+  background-color: #e5ddd0;
+  justify-content: center;
+  align-items: center;
+}
+
+#popup-dinner article {
+  width: 100%;
+  background-color: #e5ddd0;
+  justify-content: center;
+  align-items: center;
+}
+
+#luk,
+#luk1 {
+  position: fixed;
+  padding: 1em;
+  cursor: pointer;
+  color: black;
+  font-weight: bolder;
+  font-size: 1.7em;
 }
 
 @media (min-width: 1000px) {
