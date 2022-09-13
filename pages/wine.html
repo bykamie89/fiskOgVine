@@ -14,20 +14,21 @@
   </head>
   <body>
     <header>
+      <a class="logo_mob" href="/pages/index.html"
+        ><img src="/svg/Artboard 1.svg" alt="fisk&vin logo"
+      /></a>
       <nav class="menu">
         <button class="toggle-btn">=</button>
         <ul>
           <li><a href="/pages/about.html">Book</a></li>
           <li><a href="/pages/about.html">Om</a></li>
           <li>
-            <a class="logo" href="/pages/index.html"
+            <a class="logo_web" href="/pages/index.html"
               ><img src="/svg/Artboard 1.svg" alt="fisk&vin logo"
             /></a>
           </li>
           <li><a href="/pages/menu.html">Menu</a></li>
-          <li>
-            <a href="/pages/wine.html">Vin</a>
-          </li>
+          <li><a href="/pages/wine.html">Vin</a></li>
         </ul>
       </nav>
     </header>
@@ -35,7 +36,7 @@
     <main>
       <section>
         <nav id="wine-card">
-          <button id="wine" data-winetype="wine" class="valgt">Vinkort</button>
+          <button data-winetype="alle" class="valgt">Vinkort</button>
           <button data-winetype="champagne">Champagne</button>
           <button data-winetype="hvidvin">Hvidvin</button>
           <button data-winetype="rødvin">Rødvin</button>
@@ -46,7 +47,7 @@
         </div>
       </section>
       <h2 class="drink-type-headline"></h2>
-      <section id="drink-type"></section>
+      <section id="drink-holder"></section>
     </main>
 
     <footer>
@@ -82,22 +83,14 @@
     </footer>
 
     <template id="drink-template">
-      <article id="template-article">
+      <article class="template-article">
+        <h2 class="drink-type"></h2>
         <p class="drink-decription"></p>
         <p class="drink-vintage"></p>
         <p class="drink-price"></p>
       </article>
     </template>
     <script src="/js/burgermenu.js"></script>
-    <script src="/js/script.js"></script>
-    <script>
-      async function getData() {
-        const response = await fetch(url + 'wine', info);
-        dbResponse = await response.json();
-        if (this.winetype == 'wine') {
-          visDrinks();
-        }
-      }
-    </script>
+    <script src="/js/wine.js"></script>
   </body>
 </html>

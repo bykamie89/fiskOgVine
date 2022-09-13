@@ -9,7 +9,7 @@ button{
     margin: 3rem 10rem 3rem 10rem;
 }
 
-#template-article{
+.template-article{
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
 
