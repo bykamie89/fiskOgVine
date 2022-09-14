@@ -56,7 +56,7 @@ function visDrinks() {
           drink.type.toUpperCase();
         drinkType = drink.type;
       } else {
-        clone.querySelector('.drink-type').textContent = '';
+        clone.querySelector('.drink-type').style.display = 'none';
       }
 
       clone.querySelector('.drink-decription').textContent = drink.description;
