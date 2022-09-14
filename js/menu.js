@@ -34,10 +34,7 @@ function visLunch() {
   const lunchTemplate = document.querySelector("#lunch-template").content;
   lunchSection.style.display = "block";
 
-  // lunchSection.textContent = "";
-
   dbConnection.forEach((lunchItem) => {
-    // console.log("Kategori", lunchItem.kategori);
     const klon = lunchTemplate.cloneNode(true);
     klon.querySelector(".mainingredient1").textContent = lunchItem.mainIngredient;
     klon.querySelector(".description1").textContent = lunchItem.description;
@@ -51,7 +48,6 @@ function visDinner() {
   dinnerSection.style.display = "block";
 
   dbConnection.forEach((dinnerItem) => {
-    // console.log("Kategori", dinnerItem.kategori);
     const klon = dinnerTemplate.cloneNode(true);
     klon.querySelector(".mainingredient1").textContent = dinnerItem.mainIngredient;
     klon.querySelector(".description1").textContent = dinnerItem.description;
