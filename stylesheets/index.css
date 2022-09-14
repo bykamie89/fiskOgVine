@@ -46,9 +46,10 @@ main img {
 
 
 .button{
-    background-color: rgba(215, 215, 215, 0.68);
+    background-color: var(--button-blue);
+    color: var(--ptag-beige);
     padding: 20px;
-    font-size: 90%;
+    font-size: 1.5rem;
     cursor: pointer;
 }
 a:hover {
