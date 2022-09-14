@@ -115,14 +115,12 @@
 
 .mainingredient1 {
   text-align: center;
-  font-size: 1.5em;
   line-height: 1.5;
   padding-top: 10px;
 }
 
 .description1 {
   text-align: center;
-  font-size: 1em;
   line-height: 1.5;
   font-style: italic;
   padding-left: 20px;
@@ -131,7 +129,6 @@
 
 .price1 {
   text-align: center;
-  font-size: 1em;
   line-height: 1.5;
 }
 
@@ -158,20 +155,14 @@
 
   .mainingredient1 {
     text-align: start;
-    font-size: 1.2em;
-    line-height: 1.5;
     margin-left: 10%;
   }
 
   .description1 {
     text-align: start;
-    font-size: 1.2em;
-    line-height: 1.5;
   }
 
   .price1 {
     text-align: center;
-    font-size: 1.2em;
-    line-height: 1.5;
   }
 }
