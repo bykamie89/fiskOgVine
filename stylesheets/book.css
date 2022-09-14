@@ -4,9 +4,9 @@ main img{
  max-width: 100%;
 }
 
-.col_img{
-  background-image: url(../img/billede22.webp);
-  background-size: cover;
+.col_img img{
+  background-size:cover;
+  height: 100%;
 }
 .col_book{
     margin: 60px;
@@ -20,11 +20,11 @@ main img{
 }
 .book-grid p {
     color: #707070;
-    margin-bottom: 20px;
 }
 .book-grid h2 {
     color: #707070;
     font-weight: bold;
+    margin-top: 40px;
 }
 .videre{
     background-color: #536890;
@@ -53,17 +53,21 @@ main img{
 button{
     cursor: pointer;
 }
+.grid_a{
+    display: grid;
+    justify-content: center;
+}
 
-@media (min-width:800px) {
+.grid_b{
+    display: grid;
+    justify-content: center;
+}
+
+@media (min-width:850px) {
     .book-grid{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    .col_img{
-        background-image: url(../img/billede22.webp);
-        background-size: cover;
-        background-position: 50%;
-      }
 
 }
 
