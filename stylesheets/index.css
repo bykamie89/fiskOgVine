@@ -32,13 +32,12 @@ main img {
 .quote {
     background-color: rgba(211, 211, 211, 0.201);
     height: 30vh;
-    align-self: center;
-    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .quote h1{
     font-size: 200%;
-    text-align: center;
-    padding-top: 4.5rem;
 }
 .gallery {
     display: grid;
@@ -67,9 +66,7 @@ a:hover {
 }
 
 @media (min-width: 422px){
-    .quote h1{
-        padding-top: 5rem;
-    }
+   
     .splash{
         height: 90vh;
     }
@@ -121,7 +118,7 @@ a:hover {
 }
 @media (min-width: 1277px){
     .gallery {
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
 }
 
