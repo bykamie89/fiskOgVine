@@ -8,36 +8,100 @@
 /* Mobile first */
 .grid_1-1 {
   display: grid;
-  padding: 20px;
-  gap: 20px;
 }
 
 .col_img1 {
-  background-image: url(../img/Rimmet\ jomfruhummer\ med\ grønne\ jordbær\,\ peberrod\ og\ baerii\ caviar.webp);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/billede18.webp);
   background-size: cover;
   width: 100%;
-  height: auto;
+  height: 100%;
   aspect-ratio: 50/50;
   background-position: 50%;
-  margin-top: 5%;
 }
 
 .col_img2 {
-  background-image: url(../img/Stegt\ lam\ med\ spæde\ hvidløg\,\ jordskokker\ &\ sauce\ med\ rosmarin.webp);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/billede21.webp);
   background-size: cover;
   width: 100%;
   height: auto;
   aspect-ratio: 50/50;
   background-position: 50%;
-  margin-top: 5%;
+}
+
+.col_img3 {
+  background-image: url(../img/billede2.webp);
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 100/30;
+  background-position: 50%;
+}
+
+.col_img4 {
+  background-image: url(../img/billede20.webp);
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 100/30;
+  background-position: 50%;
 }
 
 button {
-  color: black;
-  background-color: lightgrey;
-  width: 100px;
-  height: 25px;
+  color: var(--ptag-beige);
+  background-color: var(--button-blue);
+  width: 250px;
+  height: 100px;
   text-align: center;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+#popup-lunch,
+#popup-dinner {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  background-color: black;
+  display: none;
+}
+
+#popup-lunch article {
+  width: 100%;
+  background-color: var(--ptag-grey);
+  justify-content: center;
+  align-items: center;
+}
+
+#popup-dinner article {
+  width: 100%;
+  background-color: var(--ptag-grey);
+  justify-content: center;
+  align-items: center;
+}
+
+#luk,
+#luk1 {
+  position: fixed;
+  padding: 1em;
+  cursor: pointer;
+  color: black;
+  font-weight: bolder;
+  font-size: 1.7em;
+}
+
+.overskrift {
+  text-align: center;
+  font-size: 5em;
+  padding: 20px;
+  margin-top: 40px;
 }
 
 @media (min-width: 1000px) {

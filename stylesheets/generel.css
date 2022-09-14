@@ -4,10 +4,11 @@
   cursor: revert;
   box-sizing: border-box;
 }
-html{
-  --ptag-beige:#E6DCD4;
-  --ptag-grey:#9C9795;
-  --ptag-blue:#303249;
+html {
+  --ptag-beige: #e6dcd4;
+  --ptag-grey: #9c9795;
+  --ptag-blue: #303249;
+  --button-blue: #536890;
 }
 
 .toggle-btn {
@@ -17,7 +18,7 @@ html{
 }
 
 header {
-  background-color: #E6DCD4;
+  background-color: #e6dcd4;
   /*box-shadow: 0 12px 50px 0 #f8f7f7e1;*/
   position: sticky;
   top: 0;
@@ -32,6 +33,7 @@ header {
 
 .menu ul {
   display: none; /* Fjern menu-listen som standard */
+  color: var(--ptag-blue);
 }
 
 .menu li a {
@@ -54,7 +56,7 @@ header {
   background-color: lightgrey;
   padding: 1rem;
 }
-.logo_web img{
+.logo_web img {
   display: none;
 }
 .logo_mob {
@@ -62,7 +64,7 @@ header {
   align-items: center;
   display: flex;
 }
-.logo_mob img{
+.logo_mob img {
   width: 50%;
   align-self: center;
 }
@@ -74,32 +76,35 @@ header {
   font-family: paragrafFont;
   src: url(/fonte/josefinsans-variablefont_wght-webfont.woff2);
 }
-h1{
+h1 {
   font-size: 2em;
   font-family: overskriftFont;
 }
-h2{
+h2 {
   font-size: 1.5em;
   font-family: paragrafFont;
+  color: var(--ptag-blue);
 }
-h3, address, p{
+h3,
+address,
+p {
   font-size: 1em;
   font-family: paragrafFont;
+  color: var(--ptag-blue);
 }
-a{
+a {
   font-family: paragrafFont;
   color: #303249;
   font-weight: 700;
 }
-button{
-  font-size: 1.5em;
+button {
+  font-size: 4em;
   font-family: paragrafFont;
 }
 
-
 @media (min-width: 768px) {
   header {
-    background-color: #E6DCD4;
+    background-color: #e6dcd4;
     position: sticky;
     top: 0;
   }
@@ -107,7 +112,7 @@ button{
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: #E6DCD4;
+    background-color: #e6dcd4;
     justify-content: center;
   }
   header nav ul {
@@ -117,7 +122,7 @@ button{
   .menu ul li {
     display: inline;
   }
-  .logo_mob img{
+  .logo_mob img {
     display: none;
   }
   .logo_web img {
@@ -162,7 +167,7 @@ button{
 
 footer {
   padding: 30px 20px;
-  background-color: grey;
+  background-color: #F7F3F1;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -186,17 +191,17 @@ footer {
   display: inline-block;
   height: 40px;
   width: 40px;
-  background-color: lightgray;
+  background-color: #e6dcd4;
   margin: 0 10px 10px 0;
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
-  color: #ffffff;
+  color: var(--ptag-blue);
   transition: all 0.5s ease;
 }
 
 .col .social-links a:hover {
-  color: aqua;
+  color: var(--button-blue);
   background-color: #ffffff;
 }
 

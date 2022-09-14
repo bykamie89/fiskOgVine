@@ -3,7 +3,7 @@ main img {
     max-width: 100%;
 }
 .splash {
-    background-image:url(/img/Udefra.webp);
+    background-image:url(/img/billede23.webp);
     background-size: cover;
     aspect-ratio: 16/9;
     background-position: 25% 70%;
@@ -38,14 +38,10 @@ main img {
 }
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 15px;
-    padding: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
 
-.foto_bottum{
-    align-self: end;
-}
+
 .button{
     background-color: rgba(215, 215, 215, 0.68);
     padding: 20px;
@@ -60,11 +56,14 @@ a:hover {
     align-self: center;
     justify-self: center;
 }
-.foto_space {
-    margin-bottom: 10px;
+.hide{
+    display: none;
 }
-.foto_space1 {
-    margin-bottom: -5px;
+.foto_space {
+    display: none;
+}
+.foto_bottum{
+    display: none;
 }
 
 @media (min-width: 422px){
@@ -72,7 +71,31 @@ a:hover {
         padding-top: 5rem;
     }
     .splash{
-        height: 80vh;
+        height: 90vh;
+    }
+}
+@media (min-width:600px) {
+    .gallery{
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+@media (min-width:768px) {
+    .hide{
+        display: grid;
+    }
+    .foto_space {
+        margin-bottom: 15px;
+        display: grid;
+    }
+    .foto_bottum{
+        align-self: end;
+        display: grid;
+    }
+    .gallery{
+        gap: 15px;
+        margin: 15px;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        
     }
 }
 @media (min-width: 877px){
