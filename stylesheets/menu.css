@@ -52,7 +52,8 @@
   background-position: 50%;
 }
 
-button {
+#lunch,
+#dinner {
   color: var(--ptag-beige);
   background-color: var(--button-blue);
   width: 250px;
@@ -62,15 +63,24 @@ button {
   cursor: pointer;
 }
 
+/* body {
+  overflow: hidden;
+} */
+
 #popup-lunch,
 #popup-dinner {
-  position: fixed;
+  position: absolute;
+  inset: 0 0 0 0;
   width: 100%;
   height: auto;
   top: 0;
   left: 0;
   background-color: black;
   display: none;
+}
+
+#scroll {
+  overflow: scroll;
 }
 
 #popup-lunch article {
@@ -99,13 +109,69 @@ button {
 
 .overskrift {
   text-align: center;
-  font-size: 5em;
-  padding: 20px;
-  margin-top: 40px;
+  font-size: 4em;
+  padding: 30px;
+}
+
+.mainingredient1 {
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 1.5;
+  padding-top: 10px;
+}
+
+.description1 {
+  text-align: center;
+  font-size: 1em;
+  line-height: 1.5;
+  font-style: italic;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.price1 {
+  text-align: center;
+  font-size: 1em;
+  line-height: 1.5;
 }
 
 @media (min-width: 1000px) {
   .grid_1-1 {
     grid-template-columns: 1fr 1fr;
+  }
+
+  article {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+  .overskrift {
+    text-align: center;
+    font-size: 5em;
+    padding: 20px;
+    grid-column: 2;
+  }
+
+  article {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+
+  .mainingredient1 {
+    text-align: start;
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-left: 10%;
+  }
+
+  .description1 {
+    text-align: start;
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+
+  .price1 {
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.5;
   }
 }
