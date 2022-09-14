@@ -1,0 +1,70 @@
+
+
+main img{
+ max-width: 100%;
+}
+
+.col_img{
+  background-image: url(../img/billede22.webp);
+  background-size: cover;
+}
+.col{
+    margin: 50px;
+}
+
+.book-grid h1{
+    text-align: center;
+    color: #9C9795;
+    font-size: 3rem;
+}
+.book-grid p {
+    color: #707070;
+}
+.book-grid h2 {
+    color: #707070;
+    font-weight: bold;
+}
+.videre{
+    background-color: #536890;
+    color: #E6DCD4;
+    width: 200px;
+    height: 70px;
+    text-align: center;
+    font-weight: bolder;
+    cursor: pointer;
+    font-size: 2rem;
+    font-family: overskriftFont;
+    font-weight: 100;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.button_antal {
+    background-color: #536890;
+    color: #E6DCD4;
+    width: 300px;
+    height: 80px;
+    text-align: center;
+    font-weight: bolder;
+    cursor: pointer;
+    font-family: overskriftFont;
+    font-weight: 100;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+
+@media (min-width:768px) {
+    .book-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .col_img{
+        background-image: url(../img/billede22.webp);
+        background-size: cover;
+        background-position: 50%;
+      }
+
+}
+
+

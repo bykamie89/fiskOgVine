@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/book.css" />
+    <link rel="stylesheet" href="/stylesheets/generel.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Book Bord</title>
+</head>
+<body>
+    <header>
+        <a class="logo_mob" href="/pages/index.html"
+          ><img src="/svg/Artboard1.svg" alt="fisk&vin logo"
+        /></a>
+        <nav class="menu">
+          <button class="toggle-btn">=</button>
+          <ul>
+            <li><a href="/pages/book.html">Book</a></li>
+            <li><a href="/pages/about.html">Om</a></li>
+            <li>
+              <a class="logo_web" href="/pages/index.html"
+                ><img src="/svg/Artboard1.svg" alt="fisk&vin logo"
+              /></a>
+            </li>
+            <li><a href="/pages/menu.html">Menu</a></li>
+            <li><a href="/pages/wine.html">Vin</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="book-grid">
+            <div class="col">
+                <h1>Antal gæster</h1>
+                <div class="button_antal">
+                    <button type="button" id="sub" class="sub">-</button>
+                    <input type="text" id="1" value="0" class="field" />
+                     <button type="button" id="add" class="add">+</button>
+                </div>
+                <button class="videre">Videre</button>
+
+                <h2>Velkommen til Fisk & Vin 
+                </h2><br>
+                <p>Allergier? <br>
+                    Husk at give os besked i notefeltet under booking.<br>
+                    <br>
+                    Vegetar eller veganer? <br>
+                    Husk at give os besked i notefeltet under booking.<br>
+                    <br>
+                    Reservation til 8 personer eller flere?<br>
+                    Der skal ved grupper på mere end 7 personer, 
+                    forudbestilles enslydende menuer til alle gæsterne.<br>
+                    <br>
+                    *Vi tager selvfølgelig højde for allergier & diæter*
+                    <br><br>
+                    Ved booking på Fisk og Vin accepteres også restaurantens 
+                    afbestillingspolitik. <a href="">Se mere her</a></p>
+            </div>
+            <div class="col_img" >
+            </div>
+        </div>
+      </main>
+      <footer>
+        <div class="footer_container">
+          <div class="footer_row">
+            <div class="col">
+              <h2 class="h2_footer">KONTAKT</h2>
+              <h3>FISK & VIN</h3>
+              <address>
+                Fisk&Vinvej 1<br />
+                1234 Fiskebyen <br />
+                Fiskeland <br />
+                +45 11 22 33 44
+              </address>
+            </div>
+            <div class="col">
+              <h2 class="h2_footer">ÅBNINGSTIDER</h2>
+              <h3>TIRS-LØR</h3>
+              <p>FROKOST: 12.00 - 15.00</p>
+              <p>AFTEN: 18.00 - 22.30</p>
+              <a class="smiley" href="url">Klik her for at se Smiley rapport</a>
+            </div>
+            <div class="col">
+              <h2 class="h2_footer">SoMe</h2>
+              <div class="social-links">
+                <h3>Følg os på</h3>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-facebook-f"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script>
+        $('.add').click(function () {
+    $(this).prev().val(+$(this).prev().val() + 1);
+});
+$('.sub').click(function () {
+    if ($(this).next().val() > 0) $(this).next().val(+$(this).next().val() - 1);
+});</script>
+</body>
+</html>
