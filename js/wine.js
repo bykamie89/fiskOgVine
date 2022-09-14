@@ -6,7 +6,7 @@ const info = {
 };
 
 const wineCard = document.querySelector('.drink-type-headline');
-
+wineCard.textContent = 'Vinkort';
 let dbDrinks;
 let filter = 'alle';
 

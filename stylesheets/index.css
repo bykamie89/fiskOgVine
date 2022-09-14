@@ -95,6 +95,12 @@ a:hover {
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         
     }
+
+    .box{
+        height: 60%;
+        width: 50%;
+    }
+
 }
 @media (min-width: 877px){
     .gallery {
@@ -103,11 +109,11 @@ a:hover {
     .quote h1{
         font-size: 300%;
     }
-
     .box{
         height: 60%;
-        width: 30%;
+        width: 40%;
     }
+   
     .box img{
         max-width: 75%;
     }
@@ -116,6 +122,11 @@ a:hover {
     .gallery {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
+    .box{
+        height: 60%;
+        width: 30%;
+    }
+
 }
 @media (min-width: 1277px){
     .gallery {

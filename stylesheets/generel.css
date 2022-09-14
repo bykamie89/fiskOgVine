@@ -11,6 +11,10 @@ html {
   --button-blue: #536890;
 }
 
+body{
+  line-height: 1.6;
+}
+
 .toggle-btn {
   display: block; /* Vis knappen, når viewporten maksimalt er 600px */
   color: black;
@@ -98,8 +102,10 @@ a {
   font-weight: 700;
 }
 button {
+  font-size: 1.3em;
   font-size: 4em;
   font-family: paragrafFont;
+  max-width: 65ch;
 }
 a.current {
  text-decoration: underline 1px solid var(--ptag-blue);
