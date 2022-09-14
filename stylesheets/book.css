@@ -8,17 +8,19 @@ main img{
   background-image: url(../img/billede22.webp);
   background-size: cover;
 }
-.col{
-    margin: 50px;
+.col_book{
+    margin: 60px;
 }
 
 .book-grid h1{
     text-align: center;
     color: #9C9795;
     font-size: 3rem;
+    margin-bottom: 40px;
 }
 .book-grid p {
     color: #707070;
+    margin-bottom: 20px;
 }
 .book-grid h2 {
     color: #707070;
@@ -30,12 +32,11 @@ main img{
     width: 200px;
     height: 70px;
     text-align: center;
-    font-weight: bolder;
     cursor: pointer;
     font-size: 2rem;
     font-family: overskriftFont;
     font-weight: 100;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     margin-top: 20px;
 }
 .button_antal {
@@ -44,17 +45,16 @@ main img{
     width: 300px;
     height: 80px;
     text-align: center;
-    font-weight: bolder;
-    cursor: pointer;
     font-family: overskriftFont;
     font-weight: 100;
     margin-bottom: 20px;
     margin-top: 20px;
 }
+button{
+    cursor: pointer;
+}
 
-
-
-@media (min-width:768px) {
+@media (min-width:800px) {
     .book-grid{
         display: grid;
         grid-template-columns: 1fr 1fr;
