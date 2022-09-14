@@ -14,8 +14,10 @@ html {
 .toggle-btn {
   display: block; /* Vis knappen, når viewporten maksimalt er 600px */
   color: black;
-  padding-right: 1rem;
+  padding-left: 1rem;
+  order: -1;
 }
+
 
 header {
   background-color: #e6dcd4;
@@ -76,18 +78,18 @@ header {
   src: url(/fonte/josefinsans-variablefont_wght-webfont.woff2);
 }
 h1 {
-  font-size: 2em;
+  font-size: 2.2em;
   font-family: overskriftFont;
 }
 h2 {
-  font-size: 1.5em;
+  font-size: 1.7em;
   font-family: paragrafFont;
   color: var(--ptag-blue);
 }
 h3,
 address,
 p {
-  font-size: 1em;
+  font-size: 1.3em;
   font-family: paragrafFont;
   color: var(--ptag-blue);
 }
