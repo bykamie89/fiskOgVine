@@ -44,12 +44,16 @@ function visDrinks() {
 
   drinkSection.textContent = '';
 
+  dbDrinks.sort((a, b) => a.type.localeCompare(b.type));
+  console.log(dbDrinks);
+
   dbDrinks.forEach((drink) => {
     if (filter == drink.type || filter == 'alle') {
       const clone = drinkTemplate.cloneNode(true);
 
       if (drinkType != drink.type) {
-        clone.querySelector('.drink-type').textContent = drink.type;
+        clone.querySelector('.drink-type').textContent =
+          drink.type.toUpperCase();
         drinkType = drink.type;
       } else {
         clone.querySelector('.drink-type').textContent = '';
@@ -61,7 +65,7 @@ function visDrinks() {
       } else {
         clone.querySelector('.drink-vintage').textContent = '';
       }
-      clone.querySelector('.drink-price').textContent = drink.price;
+      clone.querySelector('.drink-price').textContent = drink.price + ' DKK';
 
       drinkSection.appendChild(clone);
     }
