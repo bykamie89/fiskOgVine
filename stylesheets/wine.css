@@ -46,7 +46,7 @@ grid-template-columns: 1fr minmax(0, 1000px) 1fr;
 }
 
 .drink-type-headline{
-    font-size: 4em;
+    font-size: 3em;
     margin-top: 4rem;
     text-align: center;
     grid-column: 1/4;
