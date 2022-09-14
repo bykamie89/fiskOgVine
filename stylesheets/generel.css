@@ -19,7 +19,6 @@ html {
 
 header {
   background-color: #e6dcd4;
-  /*box-shadow: 0 12px 50px 0 #f8f7f7e1;*/
   position: sticky;
   top: 0;
   display: grid;
@@ -127,9 +126,8 @@ button {
   }
   .logo_web img {
     display: block;
-    width: 220px;
-    margin-top: -40px;
-    margin-bottom: -10px;
+    width: 120px;
+    margin: 0.5rem 0 0.5rem 0;
   }
   .toggle-btn {
     background: transparent;

@@ -9,22 +9,26 @@ main img {
     background-position: 25% 70%;
     height: 70vh;
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 230px;
-  grid-template-areas:
-    ". a a ."
-    ". a a .";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
 }
 .box{
-    background-color: rgba(196, 194, 194, 0.87);
-    width: 50%;
-    margin: 0px;
-    text-align: center;
-    align-self: center;
-    justify-self: center;
-    grid-area: a;
+  background-color: rgba(196, 194, 194, 0.87);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 50%;
+  width: 60%;
+  gap: 3rem;
 }
+
+.box img{
+    max-width: 75%;
+}
+
 .quote {
     background-color: rgba(211, 211, 211, 0.201);
     height: 30vh;
@@ -51,11 +55,7 @@ main img {
 a:hover {
     color: white;
   }
-.logo_box img{
-    display: grid;
-    align-self: center;
-    justify-self: center;
-}
+
 .hide{
     display: none;
 }
@@ -104,6 +104,14 @@ a:hover {
     }
     .quote h1{
         font-size: 300%;
+    }
+
+    .box{
+        height: 60%;
+        width: 30%;
+    }
+    .box img{
+        max-width: 75%;
     }
 }
 @media (min-width: 1077px){
