@@ -4,13 +4,21 @@ button{
     cursor: pointer;
 }
 
-#drink-type{
+.drink-type{
     display: grid;
-    margin: 3rem 10rem 3rem 10rem;
+    margin: 3rem 0 3rem 0;
 }
 
-.template-article{
+.drink-grid{
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    /* margin-top: 2rem; */
+}
 
+#drink-holder{
+    margin: 0 5rem 0 5rem;
+}
+
+.drink-price{
+    text-align: end;
 }
