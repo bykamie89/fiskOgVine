@@ -74,11 +74,11 @@ header {
 }
 @font-face {
   font-family: overskriftFont;
-  src: url(/fonte/dancingscript-variablefont_wght-webfont.woff2);
+  src: url(../fonte/dancingscript-variablefont_wght-webfont.woff2);
 }
 @font-face {
   font-family: paragrafFont;
-  src: url(/fonte/josefinsans-variablefont_wght-webfont.woff2);
+  src: url(../fonte/josefinsans-variablefont_wght-webfont.woff2);
 }
 h1 {
   font-size: 2.2em;
