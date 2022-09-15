@@ -14,11 +14,14 @@ grid-template-columns: 1fr minmax(0, 1000px) 1fr;
     grid-template-columns: 1fr auto 1fr;
     justify-content: center;
     background-color: #9C9795;
-    padding: 2rem 0 2rem 0;
+    padding: 3rem 0 3rem 0;
 }
 
 #wine-card button:hover{
     color: white;
+}
+#wine-card button.current{
+text-decoration: underline 1px solid var(--ptag-blue);
 }
 
 #wine-card button{
@@ -41,7 +44,7 @@ grid-template-columns: 1fr minmax(0, 1000px) 1fr;
 }
 
 .drink-type{
-    margin: 4rem 0 3rem 0;
+    margin: 2rem 0 2rem 0;
     text-align:center;
 }
 
@@ -50,6 +53,7 @@ grid-template-columns: 1fr minmax(0, 1000px) 1fr;
     margin-top: 4rem;
     text-align: center;
     grid-column: 1/4;
+    margin-bottom: 3rem;
 }
 
 #wine_grid_1{

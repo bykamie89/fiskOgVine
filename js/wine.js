@@ -44,7 +44,7 @@ function visDrinks() {
 
   drinkSection.textContent = '';
 
-  dbDrinks.sort((a, b) => a.type.localeCompare(b.type));
+  dbDrinks.sort((a, b) => a.type.localeCompare(b.type)).reverse();
   console.log(dbDrinks);
 
   dbDrinks.forEach((drink) => {
