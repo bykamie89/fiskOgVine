@@ -1,35 +1,35 @@
 img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
-main {
+.om_os{
   background-color: #303249;
+  display: grid;
+  grid-template-rows: 1fr 0.2fr;
+  min-height: 70vh;
 }
 
 .element1 {
-  padding-top: 20px;
+  padding: 2rem 2rem 2rem 2rem;
+  display: grid;
 }
 
-.p_om {
-  color: #e6dcd4;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  line-height: 1.6;
-}
-
-.h1_om {
-  padding-bottom: 2rem;
-  padding-left: 1rem;
-  font-weight: bold;
+.p_om, .h1_om {
   color: #e6dcd4;
 }
 
-@media (min-width: 599px) {
+@media (min-width: 800px) {
   .om_os {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 20px;
+    grid-template-rows: 1fr;
   }
-}
+
+  .element1 {
+    grid-column: 1/2;
+    padding: 2rem 2rem 2rem 2rem;
+  }
+
+} 

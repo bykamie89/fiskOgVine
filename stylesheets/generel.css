@@ -155,26 +155,31 @@ a.current {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 800px) {
   header nav ul {
     gap: 100px;
   }
-  .footer_row {
-    display: flex;
-    justify-content: space-evenly;  
-  }
+
 }
 
 /* footer */
 
 footer {
-  position: sticky;
-  top: 100vh;
   background-color: #F7F3F1;
-  /* left: 0;
-  bottom: 0; */
   width: 100%;
   padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.footer_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;  
+  gap: 3rem;
+  padding: 2rem 2rem 2rem 2rem;
+}
+
+.col{
   padding-bottom: 2rem;
 }
 
