@@ -5,9 +5,6 @@ img {
 }
 
 main {
-  max-width: 1200px;
-  margin: 0 auto;
-  line-height: 1.5;
   background-color: #303249;
 }
 
@@ -16,11 +13,10 @@ main {
 }
 
 .p_om {
-  line-height: 1.4;
-  padding-bottom: 1.8rem;
   color: #e6dcd4;
   padding-left: 1rem;
   padding-right: 1rem;
+  line-height: 1.6;
 }
 
 .h1_om {

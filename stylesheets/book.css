@@ -16,7 +16,7 @@ main img{
     text-align: center;
     color: #9C9795;
     font-size: 3rem;
-    margin-bottom: 40px;
+    margin-bottom: 1rem;
 }
 .book-grid p {
     color: #707070;
@@ -51,8 +51,8 @@ main img{
     text-align: center;
     font-family: overskriftFont;
     font-weight: 100;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 1rem;
+    align-items: center;
 }
 button{
     cursor: pointer;
