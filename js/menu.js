@@ -38,7 +38,7 @@ function visLunch() {
     const klon = lunchTemplate.cloneNode(true);
     klon.querySelector(".mainingredient1").textContent = lunchItem.mainIngredient;
     klon.querySelector(".description1").textContent = lunchItem.description;
-    klon.querySelector(".price1").textContent = lunchItem.price + "DKK";
+    klon.querySelector(".price1").textContent = lunchItem.price + " " + "DKK";
     lunchSection.appendChild(klon);
   });
 }
@@ -51,7 +51,7 @@ function visDinner() {
     const klon = dinnerTemplate.cloneNode(true);
     klon.querySelector(".mainingredient1").textContent = dinnerItem.mainIngredient;
     klon.querySelector(".description1").textContent = dinnerItem.description;
-    klon.querySelector(".price1").textContent = dinnerItem.price + "DKK";
+    klon.querySelector(".price1").textContent = dinnerItem.price + " " + "DKK";
     dinnerSection.appendChild(klon);
   });
 }
